@@ -56,7 +56,7 @@ export class Directory {
             throw new Error('Invalid Input: Empty path');
         }
 
-        let node = this.find(path);
+        const node = this.find(path);
         const deleted = node.get(keyToDelete);
         node.delete(keyToDelete);
         return {key: keyToDelete, node: deleted};
