@@ -37,7 +37,7 @@ describe('directory tests', () => {
     describe('delete tests', () => {
         it('deletes a value from the directory', () => {
             const result = directory.delete(['fruits', 'apples', 'fuji']);
-            expect(result).toEqual({value: 'fuji', node: new Map<string, DirectoryNode>()});
+            expect(result).toEqual({key: 'fuji', node: new Map<string, DirectoryNode>()});
             const list = directory.list();
             expect(list).toEqual(`fruits\n  apples\n    honeycrisps\ngrains\nvegetables`);
         });

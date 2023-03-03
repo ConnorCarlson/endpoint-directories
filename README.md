@@ -11,6 +11,5 @@ the input text file can be found in the input folder
 
 ## Automated testing
 
-1. run `yarn compile`
-2. run `yarn test`
+run `yarn test`
 
